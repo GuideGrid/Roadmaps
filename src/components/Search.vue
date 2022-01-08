@@ -28,7 +28,7 @@ export default {
       //console.log(searchVal);
       let len;
       axios
-        .post("http://localhost:3001/searchChart", { searchVal1: searchVal })
+        .post("https://guidegrid.herokuapp.com/searchChart", { searchVal1: searchVal })
         .then((resp) => {
           // console.log(resp.data[0].mapN+" "+resp.data[0].mapT)
            len = resp.data.length;

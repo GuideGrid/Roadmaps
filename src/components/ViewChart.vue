@@ -29,7 +29,7 @@ export default {
     },
     methods:{
         ret(id,mapN){
-            axios.post("http://localhost:3001/View",{con:'Connection Made', mapName : mapN}).then((res)=>{
+            axios.post("https://guidegrid.herokuapp.com/View",{con:'Connection Made', mapName : mapN}).then((res)=>{
                 this.data12.nodes = res.data[id].nodes;
                 this.data12.links = res.data[id].links;
                 //console.log(res.data[id].nodes)

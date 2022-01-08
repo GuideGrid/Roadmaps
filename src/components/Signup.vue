@@ -58,7 +58,7 @@ export default {
   methods: {
     createUser() {
       this.clearForm();
-      axios.post("http://localhost:3001/signup", this.form,)
+      axios.post("https://guidegrid.herokuapp.com/signup", this.form,)
       .then((response)=>{
         console.log(response);
         if(response.status==200){

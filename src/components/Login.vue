@@ -59,7 +59,7 @@ export default {
   methods: {
     checkCred() {
       //this.clearForm();
-      axios.post("http://localhost:3001/login", this.form).then((response) => {
+      axios.post("https://guidegrid.herokuapp.com/login", this.form).then((response) => {
         //console.log(response);
         if (response.data.c == 1) {
           Vue.prototype.$userName = response.data.name1;
